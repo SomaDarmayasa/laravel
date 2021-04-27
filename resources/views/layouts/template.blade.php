@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>{{ config( 'Pubg Mobile Squad','Pubg Mobile Squad') }}</title>
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap">
@@ -15,12 +15,12 @@
         <style>
             @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
             .font-family-karla { font-family: karla; }
-            .bg-sidebar { background: #3d68ff; }
-            .cta-btn { color: #3d68ff; }
+            .bg-sidebar { background: #ff3d3d; }
+            .cta-btn { color: #3d91ff; }
             .upgrade-btn { background: #1947ee; }
             .upgrade-btn:hover { background: #0038fd; }
-            .active-nav-link { background: #1947ee; }
-            .nav-item:hover { background: #1947ee; }
+            .active-nav-link { background: #ee1919; }
+            .nav-item:hover { background: #ee1919; }
             .account-link:hover { background: #3d68ff; }
         </style>
 
@@ -33,41 +33,23 @@
 
         <aside class="relative bg-sidebar h-screen w-64 hidden sm:block shadow-xl">
             <div class="p-6">
-                <a href="index.html" class="text-white text-3xl font-semibold uppercase hover:text-gray-300">Admin</a>
+                <a href="index.html" class="text-white text-3xl font-semibold uppercase hover:text-gray-300">ADMIN</a>
                 <button class="w-full bg-white cta-btn font-semibold py-2 mt-5 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:shadow-xl hover:bg-gray-300 flex items-center justify-center">
                     <i class="fas fa-plus mr-3"></i> New Report
                 </button>
             </div>
             <nav class="text-white text-base font-semibold pt-3">
                 <a href="{{route('dashboard')}}" class="flex items-center active-nav-link text-white py-4 pl-6 nav-item">
-                    <i class="fas fa-tachometer-alt mr-3"></i>
-                    Dashboard
+                    <i class="fas fa-users mr-3"></i>
+                    About Us
                 </a>
-                <a href="blank.html" class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
-                    <i class="fas fa-sticky-note mr-3"></i>
-                    Blank Page
-                </a>
-                <a href="tables.html" class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
+                <a href="{{route('student.index')}}" class="flex items-center active-nav-link text-white py-4 pl-6 nav-item">
                     <i class="fas fa-table mr-3"></i>
-                    Tables
+                    Data Player
                 </a>
-                <a href="forms.html" class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
-                    <i class="fas fa-align-left mr-3"></i>
-                    Forms
-                </a>
-                <a href="tabs.html" class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
-                    <i class="fas fa-tablet-alt mr-3"></i>
-                    Tabbed Content
-                </a>
-                <a href="calendar.html" class="flex items-center text-white opacity-75 hover:opacity-100 py-4 pl-6 nav-item">
-                    <i class="fas fa-calendar mr-3"></i>
-                    Calendar
-                </a>
+
             </nav>
-            <a href="#" class="absolute w-full upgrade-btn bottom-0 active-nav-link text-white flex items-center justify-center py-4">
-                <i class="fas fa-arrow-circle-up mr-3"></i>
-                Upgrade to Pro!
-            </a>
+
         </aside>
 
         <div class="w-full flex flex-col h-screen overflow-y-hidden">
@@ -142,7 +124,7 @@
                 </main>
 
                 <footer class="w-full bg-white text-right p-4">
-                    Built by <a target="_blank" href="https://davidgrzyb.com" class="underline">David Grzyb</a>.
+                    Built by <a target="_blank" href="" class="underline">soma darmayasa</a>.
                 </footer>
             </div>
 

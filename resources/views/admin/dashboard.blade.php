@@ -1,90 +1,18 @@
 <x-template-layout>
-    <h1 class="text-3xl text-black pb-6">{{ $tittle }}</h1>
+    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+        {{ $tittle }}
+    </h2>
 
-    <div class="flex flex-wrap mt-6">
-        <div class="w-full lg:w-1/2 pr-0 lg:pr-2">
-            <p class="text-xl pb-3 flex items-center">
-                <i class="fas fa-plus mr-3"></i> Monthly Reports
-            </p>
-            <div class="p-6 bg-white">
-                <canvas id="chartOne" width="400" height="200"></canvas>
-            </div>
-        </div>
-        <div class="w-full lg:w-1/2 pl-0 lg:pl-2 mt-12 lg:mt-0">
-            <p class="text-xl pb-3 flex items-center">
-                <i class="fas fa-check mr-3"></i> Resolved Reports
-            </p>
-            <div class="p-6 bg-white">
-                <canvas id="chartTwo" width="400" height="200"></canvas>
+    <div>
+        <div class="shadow px-6 py-4 bg-white rounded sm:px-1 sm:py-1 ">
+        <div class="container">
+            <div class="row">
+                <div class="col-10">
+                    <h1 class="mt-3">CHILL Squad PUBG MOBILE</h1>
+                    <p class="mt-3"> merupakan grup atau squad Pubg Mobile yang dibentuk untuk mengikuti scrim atau latihan turnamen.  Squad ini juga bisa sebagai media menambah teman atau player yang bisa diajak bermain Pubg Mobile bersama. Disini juga terdapat Data Player sehingga jika ada player baru maka bisa di tambahkan pada Data Player. Sehingga nantinya Data player lama maupun yang baru bisa di ketahui dan bisa mengikuti scrim dadakan yang akan dikirim oleh salah satu player pada saat in game berlangsung. </p>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="w-full mt-12">
-        <p class="text-xl pb-3 flex items-center">
-            <i class="fas fa-list mr-3"></i> Latest Reports
-        </p>
-        <div class="bg-white overflow-auto">
-            <table class="min-w-full bg-white">
-                <thead class="bg-gray-800 text-white">
-                    <tr>
-                        <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Name</th>
-                        <th class="w-1/3 text-left py-3 px-4 uppercase font-semibold text-sm">Last name</th>
-                        <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Phone</th>
-                        <th class="text-left py-3 px-4 uppercase font-semibold text-sm">Email</th>
-                    </tr>
-                </thead>
-                <tbody class="text-gray-700">
-                    <tr>
-                        <td class="w-1/3 text-left py-3 px-4">Lian</td>
-                        <td class="w-1/3 text-left py-3 px-4">Smith</td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                    </tr>
-                    <tr class="bg-gray-200">
-                        <td class="w-1/3 text-left py-3 px-4">Emma</td>
-                        <td class="w-1/3 text-left py-3 px-4">Johnson</td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                    </tr>
-                    <tr>
-                        <td class="w-1/3 text-left py-3 px-4">Oliver</td>
-                        <td class="w-1/3 text-left py-3 px-4">Williams</td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                    </tr>
-                    <tr class="bg-gray-200">
-                        <td class="w-1/3 text-left py-3 px-4">Isabella</td>
-                        <td class="w-1/3 text-left py-3 px-4">Brown</td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                    </tr>
-                    <tr>
-                        <td class="w-1/3 text-left py-3 px-4">Lian</td>
-                        <td class="w-1/3 text-left py-3 px-4">Smith</td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                    </tr>
-                    <tr class="bg-gray-200">
-                        <td class="w-1/3 text-left py-3 px-4">Emma</td>
-                        <td class="w-1/3 text-left py-3 px-4">Johnson</td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                    </tr>
-                    <tr>
-                        <td class="w-1/3 text-left py-3 px-4">Oliver</td>
-                        <td class="w-1/3 text-left py-3 px-4">Williams</td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                    </tr>
-                    <tr class="bg-gray-200">
-                        <td class="w-1/3 text-left py-3 px-4">Isabella</td>
-                        <td class="w-1/3 text-left py-3 px-4">Brown</td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-                        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@mail.com</a></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
 </x-app-template>
