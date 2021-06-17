@@ -16,4 +16,14 @@ class Role extends Model
     {
         return $this->hasMany(Student::class);
     }
+
+    public function coaches()
+    {
+        return $this->hasMany(Coach::class);
+    }
+
+    public function turnamen()
+    {
+        return $this->hasMany(Turnamen::class);
+    }
 }

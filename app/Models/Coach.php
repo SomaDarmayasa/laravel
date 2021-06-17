@@ -5,17 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Student extends Model
+class Coach extends Model
 {
     use HasFactory;
-    protected $fillable = ['nama','role_id','nickname','gender','telp'];
+    protected $fillable = ['nama','gender','telp','role'];
 
     public function role()
     {
         return $this->belongsTo(Role::class);
     }
-
-    public function customer(){
-        return $this->hasMany(Customer::class);
+    public function turnamen()
+    {
+        return $this->hasMany(Turnamen::class);
     }
 }

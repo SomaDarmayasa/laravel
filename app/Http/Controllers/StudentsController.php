@@ -15,7 +15,7 @@ class StudentsController extends Controller
      */
     public function index(Request $request)
     {
-        $students = Student::with('role')->latest()->paginate(100);
+        $students = Student::with('role')->latest()->paginate(4);
         //$students = Student::all();
         $tittle = "Daftar Data Player Squad PUBG MOBILE";
         return view('admin.student',compact('tittle','students'));

@@ -21,16 +21,15 @@
                       </div>
 
                       <div class="col-span-6 sm:col-span-3">
-                        <label for="role" class="block text-sm font-medium text-gray-700">Role</label>
+                        <label for="role" class="block text-sm font-medium text-gray-700">Pilih Team</label>
                         <select class="form-control select2" style="width : 100%" name="role_id" id="role_id">
-                            <option disabled value="">Pilih Role</option>
+                            <option disabled value="">Pilih Team</option>
 
                             @foreach ($role as $item)
                                 <option value="{{ $item->id }}">{{ $item->role }}</option>
                             @endforeach
                         </select>
                       </div>
-
 
 
                       <div class="col-span-6 sm:col-span-3">
@@ -42,8 +41,9 @@
                       <div class="col-span-6 sm:col-span-3">
                         <label for="gender" class="block text-sm font-medium text-gray-700">Jenis Kelamin</label>
                         <select name="gender"  value="{{ (isset($students))?$students->gender:old('gender') }} class="@error('gender') border-red-500 @enderror class="mt-1 block w-full py-2 px-3 border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
-                          <option>Laki-Laki</option>
-                          <option>Perempuan</option>
+                            <option value="">Pilih</option>
+                            <option>Laki-Laki</option>
+                            <option>Perempuan</option>
                         </select>
                         <div class="text-xs text-red-500">@error('gender'){{ $message }}@enderror</div>
                       </div>
@@ -55,8 +55,9 @@
                       </div>
 
                   <div class="px-5 py-4 bg-gray-50 text-right sm:px-6">
-                    <button type="submit" class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                      Save
+                    <button type="submit" class="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-green-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-green-500 focus:outline-none focus:border-green-700 focus:shadow-outline-green transition ease-in-out duration-150 sm:text-sm sm:leading-5">
+                        <i class="fas fa-save mr-3"></i>
+                        Simpan
                     </button>
                   </div>
 
@@ -67,6 +68,8 @@
 
     </div>
     <div class="px-5 py-4 bg-gray-50 text-right sm:px-6">
-        <a href="{{ route('student.index') }}"><button class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Kembali</button></a>
+        <a href="{{ route('student.index') }}"><button class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            <i class="fas fa-undo-alt mr-3"></i>
+            Kembali</button></a>
       </div>
 </x-app-template>
