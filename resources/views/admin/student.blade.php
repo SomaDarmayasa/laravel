@@ -40,7 +40,7 @@
 
             <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg m-3">
                 <table class="min-w-full divide-y divide-gray-200">
-                  <thead class="bg-red-400">
+                  <thead class="bg-red-500">
                    <tr class="text-lg text-white font-bold py-2 px-4 rounded">
                         {{-- <th>Tandai</th> --}}
                        <th>No</th>

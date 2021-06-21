@@ -40,7 +40,7 @@
 
                     <table class="table-fixed w-full">
                         <thead>
-                            <tr class="bg-red-400 text-white font-bold py-2 px-4 rounded">
+                            <tr class="bg-red-500 text-white font-bold py-2 px-4 rounded">
                                 <th class="px-4 py-2">No</th>
                                 <th class="px-4 py-2">Nama Pelatih</th>
                                 <th class="px-4 py-2">Jenis Kelamin</th>

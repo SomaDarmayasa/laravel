@@ -22,7 +22,7 @@ use App\Http\Livewire\Turnamens;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('landingpage');
 });
 
 /*Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
@@ -31,14 +31,14 @@ Route::get('/', function () {
 */
 
 // Route::get('/home',[HomeController::class,'index'])->middleware(['auth:sanctum','verified']);
-Route::group(['middleware'=>['auth:sanctum','verified']],
+Route::group(['middleware'=>['auth:sanctum','verified','accsesrole']],
 function(){
     Route::get('/dashboard',[HomeController::class,'dashboard'])->name('dashboard')->middleware(['auth:sanctum','verified',]);
     Route::resource('student',StudentsController::class);
     Route::get('/cari', [StudentsController::class, 'cari']);
-    Route::get('/customer', Customers::class)->name('customer');
-    Route::get('/product', Product::class)->name('product');
-    Route::get('/cart', Cart::class)->name('cart');
+    // Route::get('/customer', Customers::class)->name('customer');
+    // Route::get('/product', Product::class)->name('product');
+    // Route::get('/cart', Cart::class)->name('cart');
     Route::get('/coach',Coaches::class)->name('coach');
     Route::get('/turnamen',Turnamens::class)->name('turnamen');
 });

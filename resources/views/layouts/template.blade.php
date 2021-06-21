@@ -33,7 +33,7 @@
 
         <aside class="relative bg-sidebar h-screen w-64 hidden sm:block shadow-xl">
             <div class="p-6">
-                <a href="index.html" class="text-white text-3xl font-semibold uppercase hover:text-gray-300">ADMIN</a>
+                <a href="index.html" class="text-white text-3xl font-semibold uppercase hover:text-gray-300">SI Tim Pubg</a>
                 {{-- <button class="w-full bg-white cta-btn font-semibold py-2 mt-5 rounded-br-lg rounded-bl-lg rounded-tr-lg shadow-lg hover:shadow-xl hover:bg-gray-300 flex items-center justify-center">
                     <i class="fas fa-plus mr-3"></i> New Report
                 </button> --}}
@@ -78,7 +78,7 @@
 
         <div class="w-full flex flex-col h-screen overflow-y-hidden">
             <!-- Desktop Header -->
-            <header class="w-full items-center bg-white py-2 px-6 hidden sm:flex">
+            <header class="w-full items-center bg-red-500 py-2 px-6 hidden sm:flex">
                 <div class="w-1/2"></div>
                 <div x-data="{ isOpen: false }" class="relative w-1/2 flex justify-end">
                     @livewire('navigation-menu')
